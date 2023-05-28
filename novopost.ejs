@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="navbartodososposts">
+      <br />
+      <img src="imgs/logobranco.png" class="logobrancotodos" />
+
+      <div class="divnav">
+        <a href="/adm1"><button class="botaonavtodos">Editar post</button></a>
+
+      
+
+        <a href="/"> <button class="botaonavtodos">Home Page</button></a>
+      </div>
+    </div>
+
+    <form class="create-post-form" id="novopostbody">
+      <input
+        type="text"
+        name="título"
+        id="título"
+        placeholder="Qual seu título"
+      />
+      <br>
+      <br>
+      <textarea
+        name="corpo"
+        id="corpo"
+        placeholder="Qual o texto adicional"
+      ></textarea>
+      <br>
+      <br>
+
+      <select name="category" id="category">
+        <option value="natureza">natureza</option>
+        <option value="comida">Comida</option>
+        <option value="diversão">Diversão</option>
+        <option value="museu">Museu</option>
+        <option value="turistico">Ponto turístico</option>
+      </select>
+      <br>
+      <br>
+      <input type="submit" id="submitbutton"/>
+    </form>
+
+    <script src="js/posts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: TTChocolates;
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+  background-color: #11766d;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #11766d;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100%;
+  background-color: #e46f0a;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  z-index: 9999;
+  left: -150px;
+  transition: all 0.5 ease;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar button#toggle-sidebar {
+  position: fixed; /* posição fixa para manter o botão visível */
+  top: 20px;
+  font-size: 25px;
+  left: 0;
+  width: 50px; /* largura do botão */
+  height: 50px; /* altura do botão */
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 2; /* para exibir o botão sobre o conteúdo da sidebar */
+}
+
+.sidebar .sidebar-content {
+  display: none;
+  padding: 15px; /* adicione um preenchimento para o conteúdo da sidebar */
+}
+
+.sidebar.open .sidebar-content {
+  display: block;
+}
+
+.content {
+  flex: 1;
+  height: 500px;
+  width: 250px;
+  background-color: #fff;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  text-align: center;
+  right: 50%;
+}
+
+h1 {
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+
+.logobranco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  position: center;
+  margin: auto;
+}
+
+.botaosidebar1 {
+  float: right;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+.botaosidebar {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  transition: color 100ms;
+  vertical-align: baseline;
+  touch-action: manipulation;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.botaosidebar:hover,
+.botaosidebar:focus {
+  background-color: #d1d1d1;
+}
+
+.fotocategorias {
+  height: 20px;
+  border-radius: 50%;
+}
+
+/* todos os posts */
+
+.navbartodososposts {
+  background-color: #11766d;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  border-bottom: 15px solid white;
+  
+}
+
+.navbarnatureza {
+  background-color: #11766d;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  border-bottom: 15px solid #48b1a9;
+}
+
+.navbarcomida {
+  background-color: #11766d;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  border-bottom: 15px solid #410936;
+}
+
+.navbardiversao {
+  background-color: #11766d;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  border-bottom: 15px solid #a40b54;
+}
+
+.navbarmuseu {
+  background-color: #11766d;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  border-bottom: 15px solid #e46f0a;
+}
+
+.navbarturistico {
+  background-color: #11766d;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  border-bottom: 15px solid #f0b300;
+}
+
+.logobrancotodos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  position: center;
+  margin: auto;
+  border-top: 30px;
+}
+
+.botaonavtodos {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -0.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+.divnav {
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.botaonavtodos:focus {
+  color: #171e29;
+}
+
+.botaonavtodos:hover {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+.botaonavtodos:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
+}
+
+.footertext{
+  color: white;
+}
+
+#título{
+  
+  padding: 0 8px;
+  vertical-align: middle;
+  border-radius: 2px;
+  width: 100%;
+  min-height: 36px;
+  background-color: #ffffff;
+  border: 1px solid rgba(36,28,21,0.3);
+  transition: all 0.2s ease-in-out 0s;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  :focus{
+      outline: none;
+      border: 1px solid #007c89;
+      box-shadow: inset 0 0 0 1px #007c89;
+  }
+
+}
+
+#corpo{
+   
+  padding: 0 8px;
+  vertical-align: middle;
+  border-radius: 2px;
+  width: 100%;
+  min-height: 36px;
+  background-color: #ffffff;
+  border: 1px solid rgba(36,28,21,0.3);
+  transition: all 0.2s ease-in-out 0s;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  :focus{
+      outline: none;
+      border: 1px solid #007c89;
+      box-shadow: inset 0 0 0 1px #007c89;
+  }
+}
+
+#category{
+   
+  padding: 0 8px;
+  vertical-align: middle;
+  border-radius: 2px;
+  width: 100%;
+  min-height: 36px;
+  background-color: #ffffff;
+  border: 1px solid rgba(36,28,21,0.3);
+  transition: all 0.2s ease-in-out 0s;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  :focus{
+      outline: none;
+      border: 1px solid #007c89;
+      box-shadow: inset 0 0 0 1px #007c89;
+  }
+}
+
+#submitbutton{
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 8px;
+  border-width: 0;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border-left: 30px;
+}
+
+#novopostbody{
+  padding-left: 300px;
+  padding-right: 300px;
+}

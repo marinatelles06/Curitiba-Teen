@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/posts.css" />
+  </head>
+
+  <body>
+    <div class="navbarnatureza">
+      <br />
+      <img src="imgs/logobranco.png" class="logobrancotodos" />
+
+      <a href="/natureza"> <button class="botaonavtodos">Natureza</button></a>
+
+      <a href="/comida"> <button class="botaonavtodos">Comida</button></a>
+
+      <a href="/diversao"> <button class="botaonavtodos">Diversão</button></a>
+
+      <a href="/museu"> <button class="botaonavtodos">Museus</button></a>
+
+      <a href="/turistico">
+        <button class="botaonavtodos">Pontos Turísticos</button></a
+      >
+
+      <a href="/posts">
+        <button class="botaonavtodos">Todos os posts</button></a
+      >
+
+      <a href="/"> <button class="botaonavtodos">Home Page</button></a>
+    </div>
+    <div class="posts">
+      <% posts.forEach(post=> { %>
+      <div class="post" data-category="<%=post.category%>">
+        <p class="titulo_post"><%=post.title%></p>
+        <p class="body"><%=post.body%></p>
+        <p class="category"><%=post.category%></p>
+      </div>
+      <%});%>
+    </div>
+  </body>
+</html>
